@@ -28,12 +28,16 @@ function createButton(title, onclick) {
   };
 }
 
+
 const buttons = [];
+
 function createBuyButtons(items) {
     for (let item of items) {
-        buttons.push(createButton(item.title, function() {
-            console.log(this.title + ' добавлен в корзину');
-            })
+        buttons.push(
+            createButton(
+                item.title,
+                () => console.log(item.title + ' добавлен в корзину')
+            )
         );
     }
 }

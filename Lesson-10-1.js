@@ -35,7 +35,6 @@ const itemPrototype = {
   }
 };
 
-// const itemsForeSell = Object.assign({}, items);
 const itemsForeSell = [];
 for(let item of items) {
     itemsForeSell.push(item);
